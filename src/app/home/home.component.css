@@ -1,0 +1,27 @@
+.main-container{
+    /* margin-left:150px;
+    margin-right:150px;
+    margin-top: 25px; */
+    margin:auto;
+    width: 50%;
+    height: 100%;
+}
+#p1{
+    text-align: center;
+}
+
+
+.bottom-container{
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    /* width:950px; */
+    padding: 10px;
+}
+.video{
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    
+}

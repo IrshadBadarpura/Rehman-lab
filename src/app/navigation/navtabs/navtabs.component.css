@@ -1,0 +1,10 @@
+.navtabs-container{
+    background-color:red;
+   
+}
+.toolbar-flex{
+    flex: 1 0.5 auto;
+}
+button{
+    padding:0 40px;
+}

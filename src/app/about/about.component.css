@@ -1,0 +1,129 @@
+.overlay-image {
+    position: relative;
+    width:100%;
+    margin-right:30px;
+    margin-top:30px;
+    margin-bottom: 20px;
+   }
+   /* Original image */
+   .overlay-image .image {
+    display:block;
+    height: 200px;
+    width:100%;
+
+   }
+   /* Original text overlay */
+   .overlay-image .text {
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   }
+tr{
+    border:2px solid black;
+}
+#p2{
+    margin:10px;
+    float: right;
+}
+.table1{
+    position: relative;
+    float: left;
+    margin-left:425px;
+    margin-top: 50px;
+}
+.table2{
+    position: relative;
+    float: left;
+    margin-left:50px;
+    margin-top: 50px;
+}
+#img1{
+    margin-left:15px ;
+    background-attachment: fixed no-repeat;
+    width:255px;
+    height:250px ;
+}
+.profile-container{
+    /* margin-top:20px; */
+    
+    width: 300px;;
+    height:385px;
+    border: 2px solid black;
+    padding:10px;
+}
+#p1{
+    margin-left:10px;;
+}
+.jr-container{
+    margin-top:20px;
+    margin:auto;
+
+    width:20%;
+}
+
+.container-col {
+    border: 2px solid black;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }

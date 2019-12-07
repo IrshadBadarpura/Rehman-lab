@@ -1,0 +1,134 @@
+<div class="main-container-ribo">
+    <div class="image-container"><div class="overlay-image">
+        <img class="image" src="./assets/ribo.jpg" alt="Alt text" />
+        <div class="text"><h3>RiboTag Endothelial Heterogeneity at Baseline and during Inflammation</h3></div>
+      </div>
+    </div>
+    <div class=text-container>
+       <span> <h6> <font color="#000080">Organ-specific Endothelial Translatome Heterogeneity during Homeostasis and LPS-induced Inflammation</font> </h6>
+        <P align="justify"> 
+            <strong> Overall design</strong>:  Endothelial mRNA translatome profiles were generated for Brain, Lung, and Heart tissue using adult Cdh5CreERT2/+; Rpl22HA/+ mice<br>
+            <strong> Summary</strong>: Several studies have suggested that endothelial cells which line the blood vessels in each organ significantly differ from each other, but little is known about their distinct and characteristic signatures. We assessed the brain, lung, and heart endothelial translatome using the RiboTag mouse model which allows for the direct isolation of cell-type specific ribosomes and the mRNA undergoing translation. 
+        </P>
+       </span>
+    </div>
+  </div>
+  <!-- <div class="main-button-container">
+    <p id="p-button">
+      <button class="button-3" mat-raised-button color="warn" (click)="isCollapsedCheck = !isCollapsedCheck"
+              [attr.aria-expanded]="!isCollapsedCheck" aria-controls="but-1">
+              Baseline Endothelial Heterogeneity
+      </button>
+      <button class="button-4" mat-raised-button color="warn" (click)="isOpenCheck = !isOpenCheck"
+              [attr.aria-expanded]="!isOpenCheck" aria-controls="but-2">
+              Endothelial Heterogeneity during Inflammation
+      </button>
+    </p>
+  </div>
+  <div id="but-1" [ngbCollapse]="isCollapsedCheck">
+    <!-- <div class="button-container">
+      <p id="p-button">
+        <button class="button-1" mat-raised-button color="warn" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="viz-1">
+                Select Single Gene of Interest
+        </button>
+        <button class="button-2" mat-raised-button color="warn" (click)="isOpen = !isOpen"
+                [attr.aria-expanded]="!isOpen" aria-controls="viz-2">
+          Select Multiple Genes of Interest
+        </button>
+      </p>
+    </div> -->
+    <!-- <div class="tableau-container">
+      <h2>Select Gene of Interest:</h2>
+      <div id="VizContainer"></div>
+      <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+  </div>
+  <div class="tableau-container1">
+    <h2>Select Multiple Genes of Interest:</h2>
+  <div id=VizConatainer1></div>    
+  <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+</div>
+  </div> -->
+  <!-- <div id="viz-1" [ngbCollapse]="isCollapsed" >
+      <div class="tableau-container">
+        <h2>Select Gene of Interest:</h2>
+        <div id="VizContainer"></div>
+        <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+    </div>
+    </div>
+    <div id="viz-2" [ngbCollapse]="isOpen">
+      <div class="tableau-container1">
+        <h2>Select Multiple Genes of Interest:</h2>
+      <div id=VizConatainer1></div>    
+      <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+    </div> -->
+    <!-- </div>
+    <div id = "but-2" [ngbCollapse]="isOpenCheck">
+      <div class="button-container">
+        <p id="p-button">
+          <button class="button-1" mat-raised-button color="warn" (click)="isCollapsedC = !isCollapsedC"
+                  [attr.aria-expanded]="!isCollapsedC" aria-controls="viz-3">
+                  Select Single Gene of Interest
+          </button>
+          <button class="button-2" mat-raised-button color="warn" (click)="isOpenC = !isOpenC"
+                  [attr.aria-expanded]="!isOpenC" aria-controls="viz-4">
+            Select Multiple Genes of Interest
+          </button>
+        </p>
+      </div>
+      </div>
+    <div id="viz-3" [ngbCollapse]="isCollapsedC">
+      <div class="tableau-container3">
+        <h2>Select Gene of Interest:</h2>
+        <div id="VizContainer3"></div>
+        <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+    </div>
+    </div>
+    <div id="viz-4" [ngbCollapse]="isOpenC">
+      <div class="tableau-container3">
+        <h2>Select Multiple Genes of Interest:</h2>
+        <div id="VizContainer3"></div>
+        <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+    </div>
+    </div> -->
+    <!-- <div class="note-container">
+      <h3><p><font color="red"> Note:</font> To switch between buttons please close the open button first</p></h3>
+    </div>     -->
+<div class="main-button-container">
+    <p id="p-button">
+      <button *ngIf="CollapseBool" class="button-3" mat-raised-button color="warn" (click)="itsCollapsed()"
+              [attr.aria-expanded]="!isCollapsedCheck" aria-controls="but-1">
+              {{openCollapse}} Baseline Endothelial Heterogeneity
+      </button>
+      <button *ngIf="CheckedBool" class="button-4" mat-raised-button color="warn" (click)="itsChecked()"
+              [attr.aria-expanded]="!isOpenCheck" aria-controls="but-2">
+              {{openCheck}} Endothelial Heterogeneity during Inflammation
+      </button>
+    </p>
+  </div>
+ <div id="but-1" [ngbCollapse]="isCollapsedCheck">
+  <div class="tableau-container">
+    <h2>Select Gene of Interest:</h2>
+    <div id="VizContainer"></div>
+    <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+</div>
+<div class="tableau-container1">
+  <h2>Select Multiple Genes of Interest:</h2>
+<div id=VizConatainer1></div>    
+<h6>Note: Use <font color="red">|<-</font> to start over</h6>
+</div>
+ </div> 
+ <div id="but-2" [ngbCollapse]="isOpenCheck">
+  <div class="tableau-container3">
+    <h2>Select Gene of Interest:</h2>
+    <div id="VizContainer3"></div>
+    <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+</div>
+<div class="tableau-container3">
+  <h2>Select Multiple Genes of Interest:</h2>
+  <div id="VizContainer3"></div>
+  <h6>Note: Use <font color="red">|<-</font> to start over</h6>
+</div>
+ </div>
+
+

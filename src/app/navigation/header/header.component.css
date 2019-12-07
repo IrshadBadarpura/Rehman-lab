@@ -1,0 +1,15 @@
+img{
+    height:125px;
+
+}
+mat-toolbar{
+    height:150px;
+    
+}
+font{
+    margin:30px;
+    text-align:center;
+}
+.header-container{
+    text-align:center;
+}
